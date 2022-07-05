@@ -1,0 +1,66 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+@import url('./popularCourses.css');
+@import url('./search.css');
+@import url('./services.css');
+@import url("./slider.css");
+@import url('./events.css');
+@import url('./footer.css');
+@import url('./courses.css');
+@import url('./elements.css');
+@import url('./contact.css');
+
+
+.row{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
+button{
+    outline:none;
+}
+
+::selection {
+    color: white;
+    background: #ffb606;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #fff;
+    z-index: 1001;
+  }
+  
+  .preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    margin-top: -32px;
+    margin-left: -32px;
+    background: url('https://itchief.ru/examples/images/preloader.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }

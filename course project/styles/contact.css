@@ -1,0 +1,79 @@
+.contact-column1{
+    width: 55%;
+}
+
+.contacts-section{
+    width: 90%;
+    justify-content: space-around;
+    padding-top: 100px;
+    align-items: baseline !important;
+}
+
+.contact-column2{
+    width: 35%;
+}
+.contact-h1{
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+.contact-column1 form input{
+    margin-bottom: 20px;
+    height: 40px;
+    border: 2px solid white;
+    background: #f8f4f4;
+    padding-left: 25px;
+    outline: none;
+}
+.contact-column1 form input:focus{
+    border: 2px solid #ffb606;
+}
+.contact-column1 form textarea{
+    margin-bottom: 20px;
+    background: #f8f4f4;
+    padding-left: 25px;
+    outline: none;
+    border:none;
+    height: 200px;
+}
+.contact-column1 form button{
+    height: 40px;
+    border: none;
+    color: white;
+    background: #ffb606;
+    cursor: pointer;
+}
+
+.contact-column2 p{
+    line-height: 30px;
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.contact-column2 .column{
+    padding: 20px;
+}
+.contact-column2 .column a{
+    color: grey;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 14px;
+}
+.contact-column2 .column a i{
+    color: #ffb606;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width:800px){
+    .contacts-section{
+        flex-wrap: wrap;
+    }
+    .contact-column2, .contact-column1{
+        width: 100%;
+    }
+    .contact-column2{
+        margin-top: 50px;
+    }
+}

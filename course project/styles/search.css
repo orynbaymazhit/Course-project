@@ -1,0 +1,87 @@
+.register-yellow{
+    background-color: #ffb606;
+    width: 50%;
+    height: 82vh;
+    margin-left: 0 !important;
+    align-items: center;
+}
+
+.register-yellow h1{
+    color: white;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    width: 80%;
+    font-family: "roboto", sans-serif;
+}
+.register-yellow h1 span{
+    color: black;
+}
+
+.register-yellow p{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    line-height: 24px;
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.register-yellow button, .search-form button{
+    background-color: black;
+    color: white;
+    border: none;
+    height: 46px;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.search-form{
+    font-family: "roboto", sans-serif;
+    background-image: url("https://preview.colorlib.com/theme/course/images/search_background.jpg");
+    width: 50%;
+    background-size: cover;
+    height: 82vh;
+    align-items: center;
+}
+.search-form h1{
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+.search-form form input{
+   border: none;
+   height: 40px;
+   background-color: white;
+   outline: none;
+   margin-bottom: 20px;
+   padding-left: 15px;
+   outline-color: #ffb606;
+}
+
+.search-form form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.search-form button{
+    background-color: #ffb606 !important;
+    text-transform: uppercase;
+}
+
+@media (max-width:800px){
+    .search-block{
+        flex-wrap: wrap;
+    }
+    .search-form, .register-yellow{
+        width: 100%;
+    }
+    .register-yellow h1, .search-block h1{
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,77 @@
+.uncoming-events{
+    padding-top: 100px;
+}
+.events-list{
+    width: 80%;
+}
+.event-date{
+    width: 160px;
+    height: 100px;
+    border: 2px solid  #ffb606;
+    align-items: center;
+    color: #ffb606;
+}
+.event-date h1{
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 40px;
+}
+.event-date h3{
+    font-size: 15px;
+    font-weight: 900;
+}
+.event-item img{
+   width: 90%;
+   margin-bottom: 50px;
+}
+.event-item{
+    justify-content: space-around;
+}
+.event-name{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.event-name h1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.event-name h3{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 5px;
+}
+.event-name p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 10px;
+    color: rgb(156, 156, 156);
+}
+
+@media (max-width:1000px){
+    .event-item{
+        flex-wrap: wrap;
+    }
+    .event-img{
+        order: 0;
+    }
+    .event-date{
+        order: 1;
+    }
+    .event-name{
+        order: 2;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    .events-list{
+        width: 100%;
+    }
+}
+
+@media (max-width:600px){
+    .event-img{
+        padding-left: 50px;
+    }
+}

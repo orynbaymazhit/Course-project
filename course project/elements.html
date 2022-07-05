@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <script src='./js/index.js' defer></script>
+    <link rel='stylesheet' href='./styles/index.css' />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="./js/jQuery-plugin-progressbar.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/jQuery-plugin-progressbar.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src='https://preview.colorlib.com/theme/course/images/logo.png'>
+            <h1>COURSE</h1>
+        </div>
+        <nav>
+            <a href='./index.html'>HOME</a>
+            <a href='#'>ABOUT US</a>
+            <a href='./courses.html'>COURSES</a>
+            <a href='./elements.html'>ELEMENTS</a>
+            <a href='#'>NEWS</a>
+            <a href='./contact.html'>CONTACT</a>
+        </nav>
+        <div class="phone-div">
+            <img src='https://preview.colorlib.com/theme/course/images/phone-call.svg'/>
+            <p>+43 4566 7788 2457</p>
+        </div>
+        <button id='menu-btn' onclick="showMenu()"><i class="fas fa-bars trans_200"></i></button>
+    </header>
+    <section class="main-section" id="courses-section">
+        <h1 class="main-h1"><span>Elements</span></h1>
+    </section>
+    <section class="elements-section column">
+        <h1 class="elements-h1">Buttons</h1>
+        <div>
+            <button class="btn btn1" onclick="toogleForm()">Read more</button>
+            <button class="btn btn2">Read more</button>
+            <button class="btn btn3">Read more</button>
+            <button class="btn btn4">Read more</button>
+        </div>
+        <div id="addItem" class="add-form">
+            <button onclick="toogleForm()">x</button>
+            <form class="column">
+                <input id="summary" placeholder="Enter Summary">
+                <input id="details" placeholder="Enter Details">
+                <button class="btn btn4" onclick="addItem()">Save</button>
+            </form>
+        </div>
+        <h1 class="elements-h1">Progress Bars & Accordions</h1>
+        <div class="row" id="progressDetail">
+            <div class="progress-block">
+                <p>Developement</p>
+                <progress max="100" value="85"></progress>
+                <p>Design</p>
+                <progress max="100" value="55"></progress>
+                <p>CEO</p>
+                <progress max="100" value="35"></progress>
+                <p>Marketing</p>
+                <progress max="100" value="95"></progress>
+            </div>
+            <div class="details-block" id="details-content">
+                <details>
+                    <summary><p>Phasellus vestibulum, quam tincidunt venen.</p><button>+</button></summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venenatis ultrices, est libero mattis ante, ac consectetur diam neque eget quam.</p>
+                </details>
+                <details>
+                    <summary><p>Phasellus vestibulum, quam tincidunt venen.</p><button>+</button></summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venenatis ultrices, est libero mattis ante, ac consectetur diam neque eget quam.</p>
+                </details>
+                <details>
+                    <summary><p>Phasellus vestibulum, quam tincidunt venen.</p><button>+</button></summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venenatis ultrices, est libero mattis ante, ac consectetur diam neque eget quam.</p>
+                </details>
+            </div>
+        </div>
+        <h1 class="elements-h1">Loaders</h1>
+        <div class="row">
+            <div class="column">
+                <div class="progress-bar position" data-color="#dbdbdb,#ffb606"></div>
+                <h2>Photos Taken</h2>
+                <p>Etiam nec odio vestibulum est.</p>
+            </div>
+            <div class="column">
+                <div class="progress-bar position" data-color="#dbdbdb,#ffb606"></div>
+                <h2>Photos Taken</h2>
+                <p>Etiam nec odio vestibulum est.</p>
+            </div>
+            <div class="column">
+                <div class="progress-bar position" data-color="#dbdbdb,#ffb606"></div>
+                <h2>Photos Taken</h2>
+                <p>Etiam nec odio vestibulum est.</p>
+            </div>
+            <div class="column">
+                <div class="progress-bar position" data-color="#dbdbdb,#ffb606"></div>
+                <h2>Photos Taken</h2>
+                <p>Etiam nec odio vestibulum est.</p>
+            </div>
+        </div>
+        <h1 class="elements-h1">Milestones</h1>
+        <div class="row" id="milestones-row">
+            <div class="milestones-item">
+                <img src='https://preview.colorlib.com/theme/course/images/milestone_1.svg' />
+                <h1>750</h1>
+                <h3>Current Students</h3>
+            </div>
+            <div class="milestones-item">
+                <img src='https://preview.colorlib.com/theme/course/images/milestone_2.svg' />
+                <h1>150</h1>
+                <h3>Certified Teachers</h3>
+            </div>
+            <div class="milestones-item">
+                <img src='https://preview.colorlib.com/theme/course/images/milestone_3.svg' />
+                <h1>20</h1>
+                <h3>Approved Courses</h3>
+            </div>
+            <div class="milestones-item">
+                <img src='https://preview.colorlib.com/theme/course/images/milestone_4.svg' />
+                <h1>+2750</h1>
+                <h3>Graduate Students</h3>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="title-center column">
+            <span></span>
+            <h1>Subscribe to newsletter</h1>
+        </div>
+        <div class="subscribe-input row">
+            <input placeholder="Email Address" type="email">
+            <button>Subscribe</button>
+        </div>
+        <hr>
+        <div class="footer-menu row">
+            <div class="footer-item">
+                <div class="logo">
+                    <img src='https://preview.colorlib.com/theme/course/images/logo.png'>
+                    <h1>COURSE</h1>
+                </div>
+                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum, tempor lacus.</p>
+            </div>
+            <div class="footer-item column">
+                <h1>Menu</h1>
+                <a href='#'>Home</a>
+                <a href='#'>About us</a>
+                <a href='#'>Courses</a>
+                <a href='#'>News</a>
+                <a href='#'>Contact</a>
+            </div>
+            <div class="footer-item column">
+                <h1>Usefull Links</h1>
+                <a href='#'>Testimonials</a>
+                <a href='#'>FAQ</a>
+                <a href='#'>Community</a>
+                <a href='#'>Community</a>
+                <a href='#'>Tuitions</a>
+            </div>
+            <div class="footer-item column">
+                <h1>Contact</h1>
+                <a href='#'><i class="fas fa-map-marker-alt"></i>Blvd Libertad, 34 m05200 Arévalo</a>
+                <a href='#'><i class="far fa-credit-card"></i>0034 37483 2445 323</a>
+                <a href='#'><i class="far fa-envelope"></i>hello@company.com</a>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright row">
+            <p>Copyright ©2021 All rights reserved | This template is made with  by Colorlib </p>
+            <div>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+		$(".progress-bar").loading();
+		$('input').on('click', function () {
+			 $(".progress-bar").loading();
+		});
+	</script>
+</body>
+</html>

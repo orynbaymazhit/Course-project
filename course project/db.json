@@ -1,0 +1,103 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "name": "A complete guide to design",
+        "description": "Adobe Guide, Layes, Smart Objects etc...",
+        "image": "https://preview.colorlib.com/theme/course/images/course_1.jpg",
+        "price": 29,
+        "authorID": 2
+      },
+      {
+        "id": 2,
+        "name": "Beginners guide to HTML",
+        "description": "Adobe Guide, Layes, Smart Objects etc...",
+        "image": "https://preview.colorlib.com/theme/course/images/course_2.jpg",
+        "price": 29,
+        "authorID": 1
+      },
+      {
+        "id": 3,
+        "name": "Advanced Photoshop",
+        "description": "Adobe Guide, Layes, Smart Objects etc...",
+        "image": "https://preview.colorlib.com/theme/course/images/course_3.jpg",
+        "price": 29,
+        "authorID": 2
+      },
+      {
+        "id": 4,
+        "name": "A complete guide to design",
+        "description": "Adobe Guide, Layes, Smart Objects etc...",
+        "image": "https://preview.colorlib.com/theme/course/images/course_1.jpg",
+        "price": 29,
+        "authorID": 1
+      },
+      {
+        "id": 5,
+        "name": "A complete guide to design",
+        "description": "Adobe Guide, Layes, Smart Objects etc...",
+        "image": "https://preview.colorlib.com/theme/course/images/course_1.jpg",
+        "price": 29,
+        "authorID": 2
+      }
+    ],
+    "author": [
+      {
+        "id": 1,
+        "name": "Michael Smith",
+        "avatar": "https://preview.colorlib.com/theme/course/images/author.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Diana Maduan",
+        "avatar": "https://preview.colorlib.com/theme/course/images/author.jpg"
+      }
+    ],
+    "events": [
+      {
+        "id": 0,
+        "day": "07",
+        "month": "January",
+        "name": "Student Festival",
+        "place": "Grand Central Park",
+        "description": "In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.",
+        "image": "https://preview.colorlib.com/theme/course/images/event_1.jpg"
+      },
+      {
+        "id": 1,
+        "day": "14",
+        "month": "January",
+        "name": "Open day in the Univesrsity campus",
+        "place": "Grand Central Park",
+        "description": "In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.",
+        "image": "https://preview.colorlib.com/theme/course/images/event_2.jpg"
+      },
+      {
+        "id": 2,
+        "day": "24",
+        "month": "January",
+        "name": "Student Graduation Ceremony",
+        "place": "Grand Central Park",
+        "description": "In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.",
+        "image": "https://preview.colorlib.com/theme/course/images/event_3.jpg"
+      }
+    ],
+    "list": [
+      {
+        "id": 0,
+        "summary": "Phasellus vestibulum, quam tincidunt venen.",
+        "description": "In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor."
+      },
+      {
+        "id": 1,
+        "summary": "Phasellus vestibulum, quam tincidunt venen.",
+        "description": "In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor."
+      },
+      {
+        "summary": "test",
+        "description": "testtt",
+        "id": 2
+      }
+    ],
+    "messages": []
+  }

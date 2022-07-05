@@ -1,0 +1,35 @@
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px,1fr));
+    grid-gap: 30px;
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+}
+.grid-item img{
+    width: 50px;
+    margin-bottom: 30px;
+}
+.services{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.grid-item h1{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.grid-item p{
+    font-size: 14px;
+    color: grey;
+    line-height: 22px;
+    margin-top: 20px;
+}
+
+@media (max-width:1000px){
+    .services-grid{
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    }
+}

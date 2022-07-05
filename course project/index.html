@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <script src='./js/index.js' defer></script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src='https://preview.colorlib.com/theme/course/images/logo.png'>
+            <h1>COURSE</h1>
+        </div>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="./courses.html">COURSES</a>
+            <a href="./elements.html">ELEMENTS</a>
+            <a href="#">NEWS</a>
+            <a href="./contact.html">CONTACT</a>
+        </nav>
+        <div class="phone-div">
+            <img src='https://preview.colorlib.com/theme/course/images/phone-call.svg'/>
+            <p>+43 4566 7788 2457</p>
+        </div>
+        <button id="menu-btn" onclick="showMenu()"><i class="fas fa-bars trans_200"></i></button>
+    </header>
+    <div id="menu-div">
+        <button id="menu-btn" onclick="showMenu()"><i class="fas fa-times"></i></button>
+        <nav>
+            <a href='#'>HOME</a>
+            <a href='#'>ABOUT US</a>
+            <a href='./courses.html'>COURSES</a>
+            <a href='./elements.html'>ELEMENTS</a>
+            <a href='#'>NEWS</a>
+            <a href='#'>CONTACT</a>
+        </nav>
+        <div>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <p>Colorlib All rights reserved</p>
+    </div>
+    <section class="main-section">
+        <h1 class="main-h1">Get your <span> Education</span> today</h1>
+        <div class="main-row">
+            <div class="card-item">
+                <img src='./images/icon1.png' />
+                <div>
+                    <h2>Online courses</h2>
+                    <a>View more</a>
+                </div>
+            </div>
+            <div class="card-item">
+                <img src='./images/icon1.png' />
+                <div>
+                    <h2>Our Teachers</h2>
+                    <a>View more</a>
+                </div>
+            </div>
+            <div class="card-item">
+                <img src='./images/icon1.png' />
+                <div>
+                    <h2>Online library</h2>
+                    <a>View more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular-courses column">
+        <div class="title-center column">
+            <span></span>
+            <h1>Popular Courses</h1>
+        </div>
+        <div class="row courses-row" id='courses-content'>
+            <div class="courses-column">
+                <img src='https://preview.colorlib.com/theme/course/images/course_1.jpg'>
+                <div class="courses-text">
+                    <a href='#'>A complete guide to design</a>
+                    <p>Adobe Guide, Layes, Smart Objects etc...</p>
+                </div>
+                <div class="author-row row">
+                    <img src='https://preview.colorlib.com/theme/course/images/author.jpg'/>
+                    <p>Michael Smith, <span>Author</span></p>
+                    <div>$29</div>
+                </div>
+            </div>
+            <div class="courses-column">
+                <img src='https://preview.colorlib.com/theme/course/images/course_2.jpg'>
+                <div class="courses-text">
+                    <a href='#'>A complete guide to design</a>
+                    <p>Adobe Guide, Layes, Smart Objects etc...</p>
+                </div>
+                <div class="author-row row">
+                    <img src='https://preview.colorlib.com/theme/course/images/author.jpg'/>
+                    <p>Michael Smith, <span>Author</span></p>
+                    <div>$29</div>
+                </div>
+            </div>
+            <div class="courses-column">
+                <img src='https://preview.colorlib.com/theme/course/images/course_3.jpg'>
+                <div class="courses-text">
+                    <a href='#'>A complete guide to design</a>
+                    <p>Adobe Guide, Layes, Smart Objects etc...</p>
+                </div>
+                <div class="author-row row">
+                    <img src='https://preview.colorlib.com/theme/course/images/author.jpg'/>
+                    <p>Michael Smith, <span>Author</span></p>
+                    <div>$29</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="main-row" id="hidden">-
+    </div>
+    <section class="popular-courses column">...
+    </section>
+    <section class="search-block row">
+        <div class="register-yellow column">
+            <h1>Register now and get a discount <span>50%</span> discount until 1 January</h1>
+            <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum. Aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempo.</p>
+            <button>REGISTER NOW</button>
+        </div>
+        <div class="search-form column">
+            <h1>Search for your course</h1>
+            <form>
+                <input placeholder="Course name" type='text' id='cname'>
+                <input placeholder="Category" type='text'>
+                <input placeholder="Degree" type='text'>
+                <button type='submit' onclick="getResults(event)">Search course</button>
+            </form>
+        </div>
+    </section>
+    <section class="sevicrs">
+        <div class="title-center column">
+            <span></span>
+            <h1>Our services</h1>
+        </div>
+        <div class="services-grid">
+            <div class="grid-item">
+                <img src='https://preview.colorlib.com/theme/course/images/earth-globe.svg' />
+                <h1>Online courses</h1>
+                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+            </div>
+            <div class="grid-item">
+                <img src='https://preview.colorlib.com/theme/course/images/earth-globe.svg' />
+                <h1>Online courses</h1>
+                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+            </div>
+            <div class="grid-item">
+                <img src='https://preview.colorlib.com/theme/course/images/earth-globe.svg' />
+                <h1>Online courses</h1>
+                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+            </div>
+            <div class="grid-item">
+                <img src='https://preview.colorlib.com/theme/course/images/professor.svg' />
+                <h1>Exceptional Professors</h1>
+                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+            </div>
+            <div class="grid-item">
+                <img src='https://preview.colorlib.com/theme/course/images/books.svg' />
+                <h1>Amazing Library</h1>
+                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+            </div>
+            <div class="grid-item">
+                <img src='https://preview.colorlib.com/theme/course/images/exam.svg' />
+                <h1>Indoor Courses</h1>
+                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+            </div>
+        </div>
+    </section>
+    <section class="slider column">
+        <div class="title-center column">
+            <span></span>
+            <h1>What our students say</h1>
+        </div>
+        <div id="slider1" class="sliders1 column">
+            <span>"</span>
+            <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc.In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+            <img src="https://preview.colorlib.com/theme/course/images/testimonials_user.jpg"/>
+            <h2>JAMES COOPER 1</h2>
+            <P>Graduate student</P>
+        </div>
+        <div id='slider2' class="sliders1 column">
+            <span>"</span>
+            <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc.In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+            <img src="https://preview.colorlib.com/theme/course/images/testimonials_user.jpg"/>
+            <h2>
+                JAMES COOPER 2
+            </h2>
+            <p>Graduate Student</p>
+        </div>
+        <div id='slider3' class="sliders1 column">
+            <span>"</span>
+            <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc.In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+            <img src="https://preview.colorlib.com/theme/course/images/testimonials_user.jpg"/>
+            <h2>
+                JAMES COOPER 3
+            </h2>
+            <p>Graduate Student</p>
+        </div>
+        <div class="row slider-dots">
+            <div onclick="nextSlide(event,'slider1')" class="dots active"><span></span></div>
+            <div onclick="nextSlide(event,'slider2')" class="dots"><span></span></div>
+            <div onclick="nextSlide(event,'slider3')" class="dots"><span></span></div>
+        </div>
+    </section>
+    <section class="upcoming-events">
+        <div class="title-center column">
+            <span></span>
+            <h1>Upcoming Events</h1>
+        </div>
+        <div class="events-list column" id="event-content">
+            <div class="event-item row">
+                <div class="event-date column">
+                    <h1>07</h1>
+                    <h3>January</h3>
+                </div>
+                <div class="event-name">
+                    <h1>Student Festival</h1>
+                    <h3>Student Festival</h3>
+                    <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.</p>
+                </div>
+                <div class="event-img">
+                    <img src='https://preview.colorlib.com/theme/course/images/event_1.jpg'/>
+                </div>
+            </div>
+            <div class="event-item row">
+                <div class="event-date column">
+                    <h1>07</h1>
+                    <h3>January</h3>
+                </div>
+                <div class="event-name">
+                    <h1>Student Festival</h1>
+                    <h3>Student Festival</h3>
+                    <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.</p>
+                </div>
+                <div class="event-img">
+                    <img src='https://preview.colorlib.com/theme/course/images/event_2.jpg'/>
+                </div>
+            </div>
+            <div class="event-item row">
+                <div class="event-date column">
+                    <h1>07</h1>
+                    <h3>January</h3>
+                </div>
+                <div class="event-name">
+                    <h1>Student Festival</h1>
+                    <h3>Student Festival</h3>
+                    <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.</p>
+                </div>
+                <div class="event-img">
+                    <img src='https://preview.colorlib.com/theme/course/images/event_3.jpg'/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="title-center column">
+            <span></span>
+            <h1>Subscribe newsletter</h1>
+        </div>
+        <div class="subscribe-input row">
+            <input type="email" placeholder="Email Address">
+            <button>Subscribe</button>
+        </div>
+        <hr>
+        <div class="footer-menu row">
+            <div class="footer-item">
+                <div class="logo">
+                    <img src='https://preview.colorlib.com/theme/course/images/logo.png'>
+                    <h1>COURSE</h1>
+                </div>
+                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum, tempor lacus.</p>
+            </div>
+            <div class="footer-item column">
+                <h1>Menu</h1>
+                <a href="#">Home</a>
+                <a href="#">About as</a>
+                <a href="./courses.html">Courses</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-item column">
+                <h1>Usefull Links</h1>
+                <a href="#">Testimonials</a>
+                <a href="#">FAQ</a>
+                <a href="#">Community</a>
+                <a href="#">Community</a>
+                <a href="#">Tuitions</a>
+            </div>
+            <div class="footer-item column">
+                <h1>Contact</h1>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Blvd Libertad, 34 m05200 Arévalo</a>
+                <a href="#"><i class="far fa-credit-card"></i>0034 37483 2445 323</a>
+                <a href="#"><i class="far fa-envelope"></i>hello@company.com</a>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright row">
+            <p>Copyright ©2021 All rights reserved | This template is made with  by Colorlib </p>
+            <div>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 1000);
+        }
+      </script>
+  </body>
+</html>
